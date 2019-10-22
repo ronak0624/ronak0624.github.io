@@ -3,12 +3,9 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: "Europa" !important;
-    /* background-image: url("../../assets/img/bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    color: #212121 !important;
+    font-family: 'Europa', sans-serif !important;
+    background-color: #1e2022 !important;
+    color: #fff !important;
 }
 
 p.card-text:hover {
@@ -32,7 +29,7 @@ nav .brand {
 }
 
 nav .brand a {
-    color: #212121;
+    color: #fff;
     transition: all 0.3s ease-out;
 }
 
@@ -61,7 +58,7 @@ nav .menu li span {
 }
 
 nav .menu li a {
-    color: #212121;
+    color: #fff;
 }
 
 nav .menu li a:hover {
@@ -97,7 +94,7 @@ nav .menu li a:hover {
     z-index: 1;
     top: 0px;
     position: fixed;
-    background: #fff;
+    background: #1e2022;
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -131,7 +128,7 @@ nav .menu li a:hover {
 }
 
 .resize .menu li a {
-    color: #212121;
+    color: #fff;
 }
 
 .resize .menu li a:hover {
@@ -200,8 +197,8 @@ nav .menu li a:hover {
     text-shadow: 0;
     width: 13px;
     height: 13px;
-    border-bottom: 2px solid #212121;
-    border-right: 2px solid #212121;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
     -webkit-transform: translate(-50%, 0) rotate(45deg);
     animation: moving 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -226,7 +223,7 @@ footer{
 }
 .vertical {
     margin-top: 20px;
-    border-left: 1px solid #212121;
+    border-left: 1px solid #fff;
     height: 80px;
     position: absolute;
     left: 50%;
