@@ -327,6 +327,28 @@ footer{
           padding: 0;
     }
 }
+a.project-link{
+    color: #fff;
+}
+a.project-link:hover{
+    text-decoration: none;
+}
+.card.project-card{
+    transition: 0.4s;
+}
+.card.project-card:hover{
+    transform: scale(1.01);
+}
 .about-container{
     margin-top: 15rem;
+}
+.project-card{
+    background-color: transparent;
+    border: none;
+}
+.project-card .card-title{
+    font-weight: bold;
+}
+.project-card .card-text{
+    font-weight: lighter;
 }
