@@ -174,14 +174,10 @@ nav .menu li a:hover {
 
 .hero {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero h1 {
     font-weight: lighter;
-    text-align: center;
     letter-spacing: -2px;
     line-height: 58px;
 }
@@ -216,11 +212,13 @@ nav .menu li a:hover {
           opacity: 0;
     }
 }
+
 footer{
     position: absolute;
     margin-top: 50%;
     transform: translateY(-50%);
 }
+
 .vertical {
     margin-top: 20px;
     border-left: 1px solid #fff;
@@ -228,6 +226,7 @@ footer{
     position: absolute;
     left: 50%;
 }
+
 .row .col .mt-5{
     margin-top: 100px;
 }
