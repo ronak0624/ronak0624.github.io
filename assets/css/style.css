@@ -7,326 +7,56 @@ html, body {
     background-color: #1e2022 !important;
     color: #fff !important;
 }
-
-p.card-text:hover {
-    text-decoration: none;
-    
+a{
+    text-decoration: none !important;
 }
-nav {
-    width: 100%;
-    background: transparent;
-    height: 80px;
-    position: fixed;
-    z-index: 1;
+.hero{
+    /* margin-top: 5rem; */
 }
-
-nav .brand {
-    float: left;
-    display: block;
-    margin-left: 82px;
-    line-height: 80px;
-    font-weight: bold;
+a.typewrite{
+    color: #4b2e83;
 }
-
-nav .brand a {
-    color: #fff;
-    transition: all 0.3s ease-out;
+.work{
+    margin-top: 4rem;
 }
-
-nav .brand a:hover {
-    text-decoration: none;
-}
-
-nav .menu {
-    float: left;
-    right: 80px;
-    position: fixed;
-}
-
-nav .menu li {
-    padding-left: 40px;
-    display: inline-block;
-    cursor: pointer;
-    font-weight: 300;
-    line-height: 80px;
-    position: relative;
-    transition: all 0.3s ease-out;
-}
-
-nav .menu li span {
-    font-weight: 700;
-}
-
-nav .menu li a {
+a.project-link{
     color: #fff;
 }
-
-nav .menu li a:hover {
+a.project-link:hover{
     text-decoration: none;
 }
-
-.toggle {
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    font-weight: 300;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    float: right;
-    transition: all 0.3s ease-out;
-    visibility: hidden;
-    opacity: 0;
+.card.project-card{
+    transition: 0.4s;
 }
-
-.close-btn {
-    position: absolute;
-    right: 16px;
-    font-weight: 300;
-    z-index: 2;
-    cursor: pointer;
-    top: -2px;
-    line-height: 80px;
-}
-
-.resize {
-    z-index: 1;
-    top: 0px;
-    position: fixed;
-    background: #1e2022;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1s ease-out;
-}
-
-.resize .menu {
-    height: 90px;
-    position: absolute;
-    left: 45%;
-    transform: translateX(-40%);
-    text-align: center;
-    display: table-cell;
-    vertical-align: center;
-}
-
-.resize .menu li {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 50px;
-    min-height: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-.resize li:nth-child(1) {
-    margin-top: 140px;
-}
-
-.resize .menu li a {
-    color: #fff;
-}
-
-.resize .menu li a:hover {
-    text-decoration: none;
-}
-
-.resize.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-@media(max-width: 768px) {
-    .toggle {
-          visibility: visible;
-          opacity: 1;
-          margin-top: 6px;
-          margin-right: 4px;
-    }
-
-    nav .brand {
-          margin-left: 24px;
-    }
-
-    .menu a {
-          font-size: 20px;
-          font-weight: 300;
-    }
-
-    .resize li span {
-          font-weight: bolder;
-    }
-
-    nav .menu {
-          display: none;
-    }
-}
-
-@media(min-width: 768px) {
-    .resize {
-          visibility: hidden !important;
-    }
-}
-
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h1 {
-    font-weight: lighter;
-    text-align: center;
-    letter-spacing: -2px;
-    line-height: 58px;
-}
-.scroll-down {
-    position: absolute;
-    left: 50%;
-    bottom: 100px;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    z-index: 0;
-    text-decoration: none;
-    text-shadow: 0;
-    width: 13px;
-    height: 13px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -webkit-transform: translate(-50%, 0) rotate(45deg);
-    animation: moving 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-}
-
-@keyframes moving {
-    0% {
-          transform: translate(0, -20px) rotate(45deg);
-          opacity: 0;
-    }
-    50% {
-          opacity: 1;
-    }
-    100% {
-          transform: translate(0, 20px) rotate(45deg);
-          opacity: 0;
-    }
-}
-footer{
-    position: absolute;
-    margin-top: 50%;
-    transform: translateY(-50%);
-}
-.vertical {
-    margin-top: 20px;
-    border-left: 1px solid #fff;
-    height: 80px;
-    position: absolute;
-    left: 50%;
-}
-.row .col .mt-5{
-    margin-top: 100px;
-}
-.collab {
-    text-align: right;
-}
-
-.collab p {
-    font-weight: lighter !important;
-    margin-bottom: 20px;
-}
-
-.hr {
-    background: rgba(255, 255, 255, 0.2);
-    height: 1px;
-}
-
-.info h4 {
-    font-size: 18px;
-    font-weight: lighter;
-}
-
-.info p {
-    color: grey;
-    font-weight: lighter;
-}
-
-.info li {
-    font-weight: lighter;
-    color: #fff;
-    font-size: 18px;
-    padding-left: 20px;
-}
-
-#fb::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #3b5998;
-}
-
-
-#ig::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #fcaf45;
-}
-
-
-#tw::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #55acee;
-}
-
-
-#yt::before {
-    display: inline-block;
-    content: '';
-    border-radius: 100%;
-    height: 4px;
-    width: 4px;
-    margin-right: 6px;
-    background: #c4302b;
-}
-
-#media, #address {
-    text-align: right;
-}
-
-#media ul {
-    list-style: none;
-}
-
-#media ul li {
-    display: inline-block;
-}
-
-@media(max-width: 768px) {
-    .collab, #personal, #media, #address {
-          text-align: center;
-    }
-
-    .info ul {
-          margin: 0 0 0 -22px;
-          padding: 0;
-    }
+.card.project-card:hover{
+    transform: scale(1.01);
 }
 .about-container{
     margin-top: 15rem;
+}
+.project-card{
+    background-color: transparent;
+    border: none;
+}
+.project-card .card-title{
+    font-weight: bold;
+}
+.project-card .card-text{
+    font-weight: lighter;
+}
+.contact-icons{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+.contact-icons i{
+    padding-right: 0.7em;
+}
+.fa-linkedin{
+    color: #0077b5;
+}
+.fa-github{
+    color: #666;
+}
+.fa-envelope{
+    color: #ea4335;
 }

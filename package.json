@@ -1,0 +1,23 @@
+{
+  "name": "ronak0624.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronak0624/ronak0624.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronak0624/ronak0624.github.io/issues"
+  },
+  "homepage": "https://github.com/ronak0624/ronak0624.github.io#readme",
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  }
+}
