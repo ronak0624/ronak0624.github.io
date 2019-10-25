@@ -57,6 +57,10 @@ a.project-link:hover{
 .fa-github{
     color: #666;
 }
+.fa-file{
+    color: #888;
+}
 .fa-envelope{
     color: #ea4335;
 }
+@media 
