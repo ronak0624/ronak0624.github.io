@@ -51,6 +51,15 @@ a.project-link:hover{
 .contact-icons i{
     padding-right: 0.7em;
 }
+.contact-icons a{
+    float: left;
+    margin: 0 1rem;
+}
+.contact-icons a span{
+    font-size: 1rem;
+    display: block;
+    color: #eee
+}
 .fa-linkedin{
     color: #0077b5;
 }
@@ -63,4 +72,3 @@ a.project-link:hover{
 .fa-envelope{
     color: #ea4335;
 }
-@media 
