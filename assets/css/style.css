@@ -364,6 +364,11 @@ a.typewrite {
     border: none;
 }
 
+.modal-body {
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
 .modal-header {
     display: flex;
     align-items: center;
