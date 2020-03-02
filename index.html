@@ -50,20 +50,20 @@
             <div class="col">
                 <div class="contact-icons">
                     <a href="https://www.github.com/">
-                        <i class="fa fa-github"></i>
-                        <span>Github</span>
+                        <i class="fa mx-auto d-block fa-github"></i>
+                        <span class="mx-auto d-block">Github</span>
                     </a>
                     <a href="https://www.linkedin.com/in/ronakwebdev/">
-                        <i class="fa fa-linkedin"></i>
-                        <span>LinkedIn</span>
+                        <i class="fa mx-auto d-block fa-linkedin"></i>
+                        <span class="mx-auto d-block">LinkedIn</span>
                     </a>
                     <a href="mailto:ronakpat@uw.edu">
-                        <i class="fa fa-envelope"></i>
-                        <span>Email</span>
+                        <i class="fa mx-auto d-block fa-envelope"></i>
+                        <span class="mx-auto d-block">Email</span>
                     </a>
                     <a href="assets/resume.pdf">
-                        <i class="fa fa-file"></i>
-                        <span>Resume</span>
+                        <i class="fa mx-auto d-block fa-file"></i>
+                        <span class="mx-auto d-block">Resume</span>
                     </a>
                 </div>
             </div>
@@ -72,15 +72,62 @@
             <h2 class="mb-5">Here's some of my work</h2>
             <div class="row">
                 <div class="col-md">
-                    <a target="_blank" class="project-link" href="http://www.cosystems.com">
+                    <div class="project" data-toggle="modal" data-target="#cosystems-modal">
                         <div class="card project-card">
-                            <img class="card-img-top" src="assets/img/cosys.png" alt="">
+                            <img class="card-img-top" src="assets/img/cosystems.png" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">Cosystems, Inc</h4>
                                 <p class="card-text">Legacy telecom hardware provider company site.</p>
                             </div>
                         </div>
-                    </a>
+                        <div class="modal fade" id="cosystems-modal" tabindex="-1" role="dialog"
+                            aria-labelledby="cosystemsDescription" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="cosystemsTitle">Cosystems.com</h2>
+                                        <button class="btn btn-sm btn-circle btn-neutral align-self-start"
+                                            data-dismiss="modal" type="button" aria-label="Close">
+                                            <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <img class="card-img-top" src="assets/img/cosystems.png" alt="">
+                                        </div>
+                                        <p class="mb-3 mt-5 lead">
+                                            Cosystems is a company that has provided telecom services for over 30 years.
+                                        </p>
+                                        <p class="mb-3 lead">
+                                            The site can be viewed <a href="http://www.cosystems.com" target="_blank">here</a>.
+                                        </p>
+                                        <h5>Tools Used:</h5>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Express</li>
+                                            <li>Node</li>
+                                            <li>Heroku (Deployment)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="demo-repo">
+                                            <a href="https://github.com/ronak0624/swurf-savings" class="left"
+                                                target="_blank">Github Repository</a>
+                                            <a href="https://swurf.herokuapp.com/" class="right"
+                                                target="_blank">Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md">
                     <div class="project" data-toggle="modal" data-target="#swurf-modal">
@@ -90,67 +137,81 @@
                                 <h4 class="card-title">Swurf Savings</h4>
                                 <p class="card-text">A financial tool for share economy workers</p>
                             </div>
-                            <div class="project-info d-none">
-                                <div class="description">A financial tool for share economy and workers</div>
-                                <a href="https://swurf.herokuapp.com/">Demo</a>
-                                <a href="https://www.github.com/ronak0624/swurf-savings">Front-End Repository</a>
-                                <a href="https://www.github.com/ronak0624/swurf-savings-backend">Back-End Repository</a>
+                        </div>
+                        <div class="modal fade" id="swurf-modal" tabindex="-1" role="dialog"
+                            aria-labelledby="swurfDescription" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="swurfSavings">Swurf Savings</h2>
+                                        <button class="btn btn-sm btn-circle btn-neutral align-self-start"
+                                            data-dismiss="modal" type="button" aria-label="Close">
+                                            <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <img class="card-img-top" src="assets/img/swurf_xd.png" alt="">
+                                        </div>
+                                        <p class="mb-3 mt-5 lead">
+                                            Swurf Savings is a tool designed for rideshare drivers to help manage saving
+                                            more easily. Having been a Door Dash driver on the side for around 4 years,
+                                            I have always wanted a clearer picture of how much I need to work to save up
+                                            for
+                                            my various savings goals. The nature of a rideshare job is that your
+                                            earnings
+                                            are at the whim of various different factors; this makes it difficult to
+                                            plan
+                                            savings goals accordingly. Swurf allows you to create new goals, and toggle
+                                            whether they
+                                            are active or not at any given time. When you add a new shift to the
+                                            tracker, it
+                                            suggests how much of each shift should be put away to each goal. This is a
+                                            live
+                                            project,
+                                            and I am constantly adding new features to make the site more useful.
+                                        </p>
+                                        <p class="mb-3 lead">
+                                            The codebase is split into two repositories, one for the <a
+                                                href="https://github.com/ronak0624/swurf-savings">front-end</a>
+                                            and one for the <a
+                                                href="https://github.com/ronak0624/swurf-savings-backend">back-end</a>.
+                                            A
+                                            demo can be viewed
+                                            <a href="https://swurf.herokuapp.com/">here</a>. If you wish to use a demo
+                                            account rather than create your own,
+                                            the email is: <b>testing@swurf.io</b>, password: <b>password123</b>
+                                        </p>
+                                        <h5>Tools Used:</h5>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>Express</li>
+                                            <li>MongoDB</li>
+                                            <li>Node</li>
+                                            <li>Adobe XD (Wireframes)</li>
+                                            <li>Heroku (Deployment)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="demo-repo">
+                                            <a href="https://github.com/ronak0624/swurf-savings" class="left"
+                                                target="_blank">Github Repository</a>
+                                            <a href="https://swurf.herokuapp.com/" class="right"
+                                                target="_blank">Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="swurf-modal" tabindex="-1" role="dialog" aria-labelledby="swurfDescription" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h2 class="modal-title" id="swurfSavings">Swurf Savings</h2>
-                                  <button class="btn btn-sm btn-circle btn-neutral align-self-start" data-dismiss="modal" type="button" aria-label="Close">
-                                    <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
-                                    </svg>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container">
-                                        <img class="card-img-top" src="assets/img/swurf_xd.png" alt="">
-                                    </div>
-                                    <p class="mb-3 mt-5 lead">
-                                        Swurf Savings is a tool designed for rideshare drivers to help manage saving more easily. Having been a Door Dash driver on the side for around 4 years, 
-                                        I have always wanted a clearer picture of how much I need to work to save up for my various savings goals. This tool helps you track your most recent shifts and
-                                        your earnings per shift. 
-                                    </p>
-                                    <h5>Tools Used:</h5>
-                                    <ul>
-                                        <li>React</li>
-                                        <li>Express</li>
-                                        <li>MongoDB</li>
-                                        <li>Node</li>
-                                        <li>Adobe XD (Wireframes)</li>
-                                        <li>Heroku (Deployment)</li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="demo-repo">
-                                        <a href="https://github.com/ronak0624/swurf-savings" class="left" data-dismiss="modal">Github Repository</a>
-                                        <a href="https://swurf.herokuapp.com/" class="right" data-dismiss="modal">Demo</a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md">
-                    <a target="_blank" class="project-link" href="http://www.glimpsewearables.com">
-                        <div class="card project-card">
-                            <img class="card-img-top" src="assets/img/glimpsesite.png" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Glimpse Wearables</h4>
-                                <p class="card-text">Landing page for Amazon Catalyst winner.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
                 <div class="col-md">
                     <a target="_blank" class="project-link" href="https://github.com/ronak0624/LIRI-Bot">
                         <div class="card project-card">
@@ -162,6 +223,7 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-md"></div>
             </div>
         </div>
     </div>

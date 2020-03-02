@@ -95,17 +95,12 @@ a.typewrite{
 .work{
     margin-top: 4rem;
 }
-a.project-link{
-    color: #fff;
-}
-a.project-link:hover{
-    text-decoration: none;
-}
 .card.project-card{
     transition: 0.4s;
 }
 .card.project-card:hover{
     transform: scale(1.01);
+    cursor: pointer;
 }
 .about-container{
     margin-top: 15rem;
