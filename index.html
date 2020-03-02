@@ -47,6 +47,12 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-auto toolkit">
+                <h2>My toolkit</h2>
+
+            </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <div class="contact-icons">
                     <a href="https://www.github.com/">
@@ -213,15 +219,67 @@
             </div>
             <div class="row">
                 <div class="col-md">
-                    <a target="_blank" class="project-link" href="https://github.com/ronak0624/LIRI-Bot">
+                    <div class="project" data-toggle="modal" data-target="#imdb-modal">
                         <div class="card project-card">
-                            <img class="card-img-top" src="assets/img/LIRIScreenshot.png" alt="">
+                            <img class="card-img-top" src="assets/img/IMDBdata.png" alt="">
                             <div class="card-body">
-                                <h4 class="card-title">LIRI Bot</h4>
-                                <p class="card-text">A Node CLI tool that searches movies, concerts and music.</p>
+                                <h4 class="card-title">IMDB Data Report</h4>
+                                <p class="card-text">A data report on movies and their ratings</p>
                             </div>
                         </div>
-                    </a>
+                        <div class="modal fade" id="imdb-modal" tabindex="-1" role="dialog"
+                            aria-labelledby="swurfDescription" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="swurfSavings">IMDB Data Report</h2>
+                                        <button class="btn btn-sm btn-circle btn-neutral align-self-start"
+                                            data-dismiss="modal" type="button" aria-label="Close">
+                                            <svg class="gi gi-close fs-sm" width="1em" height="1em" viewBox="0 0 24 24"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <img class="card-img-top" src="assets/img/IMDBdata.png" alt="">
+                                        </div>
+                                        <p class="mb-3 mt-5 lead">
+                                            This is a statistical analysis of movies and their ratings. The project was done in R, and was made into an interactive 
+                                            webpage using Shinyapps. It explores different criteria such as movie age, genre, and cast, and displays certain insights
+                                            on their effect on movie ratings. 
+                                        </p>
+                                        <p class="mb-3 lead">
+                                            The codebase can be viewed 
+                                            <a href="https://github.com/jharshe-1730199/final-project">here</a>
+                                            A demo can be viewed
+                                            <a href="https://ronakpatel.shinyapps.io/IMDB-Data-Report/">here</a>.
+                                        </p>
+                                        <h5>Tools Used:</h5>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>Express</li>
+                                            <li>MongoDB</li>
+                                            <li>Node</li>
+                                            <li>Adobe XD (Wireframes)</li>
+                                            <li>Heroku (Deployment)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="demo-repo">
+                                            <a href="https://github.com/jharshe-1730199/final-project" class="left"
+                                                target="_blank">Github Repository</a>
+                                            <a href="https://ronakpatel.shinyapps.io/IMDB-Data-Report/" class="right"
+                                                target="_blank">Demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md"></div>
             </div>
