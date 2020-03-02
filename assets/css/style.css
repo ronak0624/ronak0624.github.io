@@ -74,7 +74,8 @@
     --border-radius-sm: .25rem;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -83,64 +84,170 @@ html, body {
     background-color: #1e2022 !important;
     color: #fff !important;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-.hero{
-    /* margin-top: 5rem; */
-}
-a.typewrite{
+
+a.typewrite {
     color: #4b2e83;
 }
-.work{
+
+.work {
     margin-top: 4rem;
 }
-.card.project-card{
+
+.card.project-card {
     transition: 0.4s;
 }
-.card.project-card:hover{
+
+.card.project-card:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
-.about-container{
+
+.about-container {
     margin-top: 15rem;
 }
-.project-card{
+
+.project-card {
     background-color: transparent;
     border: none;
 }
-.project-card .card-title{
+
+.project-card .card-title {
     font-weight: bold;
 }
-.project-card .card-text{
+
+.project-card .card-text {
     font-weight: lighter;
 }
-.contact-icons{
-    margin-top: 1rem;
-    font-size: 3rem;
+
+.contact-icons .btn,
+.contact-icons .btn:before,
+.contact-icons .btn .fa {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
-.contact-icons i{
-    padding-right: 0.7em;
+
+.contact-icons .btn:before {
+    top: 90%;
+    left: -110%;
 }
-.contact-icons a{
-    float: left;
-    margin: 0 1rem;
+
+.contact-icons .btn .fa {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
 }
-.contact-icons a span{
-    font-size: 1rem;
-    display: block;
-    color: #eee
+
+.contact-icons .btn.github::before {
+    background-color: #666;
 }
-.fa-linkedin{
-    color: #0077b5;
-}
-.fa-github{
+
+.contact-icons .btn.github .fa {
     color: #666;
 }
-.fa-file{
+
+.contact-icons .btn.email:before {
+    background-color: #dc4a38;
+}
+
+.contact-icons .btn.email .fa {
+    color: #dc4a38;
+}
+
+.contact-icons .btn.resume:before {
+    background-color: #888;
+}
+
+.contact-icons .btn.resume .fa {
     color: #888;
 }
-.fa-envelope{
+
+.contact-icons .btn.linkedin:before {
+    background-color: #0077b5;
+}
+
+.contact-icons .btn.linkedin .fa {
+    color: #0077b5;
+}
+
+.contact-icons .btn:focus:before,
+.contact-icons .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.contact-icons .btn:focus .fa,
+.contact-icons .btn:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* .contact-icons {
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}  */
+
+.contact-icons .btn {
+    display: inline-block;
+    background-color: #1e2022;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+      border: 1px solid rgba(0,0,0,0.3);
+    /*   box-shadow: 0 5px 15px -5px rgba(0,0,0,0.5); */
+    opacity: 0.99;
+}
+
+.contact-icons .btn:before {
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.contact-icons {
+    /* height: 4.5rem;
+    width: 100%; */
+}
+
+.contact-icons .btn .fa {
+    font-size: 38px;
+    /* vertical-align: middle; */
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #666;
+}
+
+.fa-file,
+.btn.email::before {
+    color: #888;
+}
+
+.fa-envelope {
     color: #ea4335;
 }
 
@@ -376,12 +483,12 @@ a.typewrite{
     height: 2.5rem;
 }
 
-.demo-repo{
+.demo-repo {
     margin: 0 auto;
 
 }
 
-.demo-repo a{
+.demo-repo a {
     color: var(--primary);
 }
 
@@ -389,10 +496,11 @@ a.typewrite{
     color: var(--primary-hover)
 }
 
-.demo-repo .right{
+.demo-repo .right {
     margin-left: 1rem;
 }
-.demo-repo .left{
+
+.demo-repo .left {
     margin-right: 1rem;
 }
 

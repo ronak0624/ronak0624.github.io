@@ -13,16 +13,10 @@ $(".close-btn").click(function () {
     $(".resize").toggleClass("active");
 });
 
-// var projectToggled = false;
 
-// $(".project").click(function() {
-//     if(projectToggled) {
-//         $(this).find('.project-info').removeClass('d-none');
-//     } else {
-//         $(this).find('.project-info').addClass('d-none');
-//     }
-//     projectToggled = !projectToggled;
-// })
+
+
+
 
 TweenMax.from(".brand", 1, {
     delay: 0.4,
@@ -95,9 +89,3 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-
-// pre: Takes String href 
-// post: Opens a new tab with the desired link
-function projectModal(link) {
-
-}
